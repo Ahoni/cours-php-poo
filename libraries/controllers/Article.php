@@ -104,6 +104,6 @@ class Article extends Controller
         // header("Location: index.php");
         // exit();
         //redirect(); remplace le code ci-dessus
-        \Http::redirect("Location: index.php");
+        \Http::redirect("index.php");
     }
 }
