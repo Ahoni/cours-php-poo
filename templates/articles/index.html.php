@@ -6,6 +6,7 @@
     <h1 class="display-3">Nos articles</h1>
     <p class="lead">Venez decouvrir nos tous derniers articles comportant de nombreux conseils divers et varier sur les methodes etuliser dans la reuliation de vos objectifs. </p>
     <hr class="my-4">
+    <img src="/templates/src/img/jo-szczepanska-5aiRb5f464A-unsplash.jpg" class="img-fluid" alt="">
 </div>
 
 <div class="row row justify-content-around">
