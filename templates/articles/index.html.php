@@ -6,16 +6,19 @@
     <img src="#" alt="">
 </section>
 
-<h1>Nos articles</h1>
+<div class="jumbotron">
+    <h1 class="display-3">Nos articles</h1>
+    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+    <hr class="my-4">
+</div>
 
-
-<div class="row">
+<div class="row row justify-content-around">
     <?php foreach ($articles as $article) : ?>
-        <div class="card text-white bg-primary col-3 m-3">
+        <div class="card text-white bg-primary col-6 col-md-5 m-2">
             <div class="card-header">Article</div>
             <div class="card-body">
                 <h2 class="card-title"><?= $article['title'] ?></h2>
-                <small>Ecrit le <?= $article['created_at'] ?></small>
+                <small>Publié le <?= $article['created_at'] ?></small>
                 <p class="card-text"><?= $article['introduction'] ?></p>
             </div>
             <button type="button" class="btn btn-secondary my-2"><a href="index.php?controller=article&task=show&id=<?= $article['id'] ?>">Lire la suite</a></button>
