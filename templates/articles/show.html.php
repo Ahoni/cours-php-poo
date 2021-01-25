@@ -14,7 +14,7 @@
 <!-- formulaire des commentaires  -->
 <form action="index.php?controller=comment&task=insert" method="POST">
     <fieldset>
-        <h4 class="bg-info">Vous voulez réagir ? N'hésitez pas les bros !</h4>
+        <h4>Vous voulez réagir ? N'hésitez pas les bros !</h4>
         <div class="form-group ">
 
             <input type="text" name="author" placeholder="Votre pseudo !">
