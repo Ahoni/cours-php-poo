@@ -1,13 +1,16 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <a class="navbar-brand" href="index.php">Navbar</a>
+<nav class="navbar navbar-expand-lg navbar-dark bg-light">
+    <a class="navbar-brand text-dark" href="index.php">Un super blog</a>
 </nav>
 
-<h1><?= $article['title'] ?></h1>
-<small>Ecrit le <?= $article['created_at'] ?></small>
-<p><?= $article['introduction'] ?></p>
+<div class="jumbotron bg-warning">
+    <h1><?= $article['title'] ?></h1>
+    <small>Publié le <?= $article['created_at'] ?></small>
+    <p><?= $article['introduction'] ?></p>
+</div>
 <hr>
 <?= $article['content'] ?>
 
+<hr>
 <?php if (count($commentaires) === 0) : ?>
     <h2>Il n'y a pas encore de commentaires pour cet article ... SOYEZ LE PREMIER ! :D</h2>
 <?php else : ?>
@@ -23,9 +26,18 @@
 <?php endif ?>
 
 <form action="index.php?controller=comment&task=insert" method="POST">
-    <h3>Vous voulez réagir ? N'hésitez pas les bros !</h3>
-    <input type="text" name="author" placeholder="Votre pseudo !">
-    <textarea name="content" id="" cols="30" rows="10" placeholder="Votre commentaire ..."></textarea>
-    <input type="hidden" name="article_id" value="<?= $article_id ?>">
-    <button>Commenter !</button>
+    <fieldset>
+        <h3>Vous voulez réagir ? N'hésitez pas les bros !</h3>
+        <div class="form-group ">
+
+            <input type="text" name="author" placeholder="Votre pseudo !">
+        </div>
+        <div class="form-group">
+            <textarea name="content" id="" cols="30" rows="10" placeholder="Votre commentaire ..."></textarea>
+        </div>
+        <div class="form-group">
+            <input type="hidden" name="article_id" value="<?= $article_id ?>">
+        </div>
+        <button>Commenter !</button>
+    </fieldset>
 </form>

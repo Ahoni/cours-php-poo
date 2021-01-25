@@ -1,8 +1,8 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <a class="navbar-brand" href="index.php">Un super blog</a>
+<nav class="navbar navbar-expand-lg navbar-dark bg-light">
+    <a class="navbar-brand text-dark" href="index.php">Un super blog</a>
 </nav>
 
-<div class="jumbotron">
+<div class="jumbotron bg-warning">
     <h1 class="display-3">Nos articles</h1>
     <p class="lead">Venez decouvrir nos tous derniers articles comportant de nombreux conseils divers et varier sur les methodes etuliser dans la reuliation de vos objectifs. </p>
     <hr class="my-4">
