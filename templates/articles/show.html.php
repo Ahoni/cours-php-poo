@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-light">
-    <a class="navbar-brand text-dark" href="index.php">Un super blog</a>
+    <h2><a class="navbar-brand text-dark" href="index.php">Un super blog</a></h2>
 </nav>
 
 <div class="jumbotron bg-warning">
